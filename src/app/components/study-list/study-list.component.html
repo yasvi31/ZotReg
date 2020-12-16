@@ -1,14 +1,19 @@
+<div *ngIf="isMessage()" class="alert alert-primary" role="alert">
+  {{message}}
+</div>
 <div class="container">
   <div class="row">
     <div class="col" *ngFor="let course of courselist">
       <!-- Display course cards for study list -->
-      <div class="card" style="width: auto;">
+      <div class="card" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">{{course[0]}}</h5>
-        <h6 class="card-subtitle mb-2 text-muted">{{course[1]}} {{course[2]}}</h6>
+        <h2 class="card-title">{{course[0]}}</h2>
+        <h3 class="card-subtitle mb-2 text-muted">{{course[1]}} {{course[2]}}</h3>
         <p class="card-text"><br><br><br><br></p>
-        <a class="btn btn-primary" role="button" (click)="change">P/NP</a>
-        <a class="btn btn-primary" role="button" (click)="drop">Drop</a>
+      </div>
+      <div class="card-footer">
+        <button type="button" class="btn btn-primary" (click)="change(course[0])">P/NP</button>
+        <button type="button" class="btn btn-primary" (click)="drop(course[0])">Drop</button>
       </div>
       </div>
     </div>
