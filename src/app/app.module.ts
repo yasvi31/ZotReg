@@ -9,6 +9,7 @@ import { StudyListComponent } from './components/study-list/study-list.component
 import { AddComponent } from './components/add/add.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { EnrollPageComponent } from './pages/enroll-page/enroll-page.component';
+import { EnrollListComponent } from './components/enroll-list/enroll-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { EnrollPageComponent } from './pages/enroll-page/enroll-page.component';
     StudyListComponent,
     AddComponent,
     LoginPageComponent,
-    EnrollPageComponent
+    EnrollPageComponent,
+    EnrollListComponent
   ],
   imports: [
     BrowserModule,
