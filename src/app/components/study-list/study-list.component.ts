@@ -27,7 +27,7 @@ export class StudyListComponent implements OnInit {
     this.courselist = this.courselist.filter(x => x[0] != courseCode);
   }
 
-  isMessage(): Booleen{
+  isMessage(){
     return this.message != "";
   }
 

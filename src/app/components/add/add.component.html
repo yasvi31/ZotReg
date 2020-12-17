@@ -1,1 +1,12 @@
-<p>add works!</p>
+<div *ngIf="isMessage()" class="alert alert-success" role="alert">
+  {{message}}
+</div>
+<div class="input-group mb-3">
+  <!-- input field -->
+  <input [(ngModel)]="courseCode" type="text" class="form-control" placeholder="Course Code to be Added">
+  <!-- add button -->
+  <div class="input-group-append">
+    <button class="btn btn-primary" type="button" (click)="addCourse()">Add Course</button>
+  </div>
+</div>
+<router-outlet></router-outlet>
