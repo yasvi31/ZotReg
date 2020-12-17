@@ -2,14 +2,14 @@
 <div *ngIf="isMessage()" class="alert alert-success" role="alert">
   {{message}}
 </div>
-<div class="container">
+<div class="container" align="center">
   <div class="row">
     <div class="col" *ngFor="let course of courselist">
       <!-- Display course cards for study list -->
       <div class="card" style="width: 18rem;">
       <div class="card-body">
-        <h2 class="card-title">{{course[0]}}</h2>
-        <h3 class="card-subtitle mb-2 text-muted">{{course[1]}} {{course[2]}}</h3>
+        <h5 class="card-title">{{course[0]}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{course[1]}} {{course[2]}}</h6>
         <p class="card-text"><br><br><br><br></p>
       </div>
       <div class="card-footer">

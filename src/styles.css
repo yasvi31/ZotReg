@@ -16,3 +16,7 @@ h2, h3 {
 a {
 	color: var(--orange);
 }
+.card {
+  background-color: var(--tertiary);
+  margin: 10px;
+}

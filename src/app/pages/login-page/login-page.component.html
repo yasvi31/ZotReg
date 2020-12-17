@@ -1,1 +1,23 @@
-<p>login-page works!</p>
+<div class="container" align="center">
+  <h1>Login</h1>
+  <div class="card" style="width: 18rem;" align="center">
+  <form class="" action="index.html" method="post">
+    <div class="card-body">
+      <!-- username field -->
+    <label>
+        <input name="username" [(ngModel)] = "username" class="form-control" placeholder="UCI Netid" type="text" required>
+    </label>
+    <br>
+    <!-- password field -->
+    <label>
+        <input name="password" [(ngModel)] = "password" class="form-control" placeholder="Password" type="password" required>
+    </label>
+    </div>
+    <!-- login button -->
+    <div class="card-footer">
+      <button type="button" class="btn btn-primary" (click)="login()">Login</button>
+    </div>
+  </form>
+  </div>
+</div>
+<router-outlet></router-outlet>
