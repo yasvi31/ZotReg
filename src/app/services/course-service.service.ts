@@ -27,4 +27,8 @@ export class CourseServiceService {
   removeAll(){
     //Todo: remove all courses from cart
   }
+
+  enrollAll(){
+    //Todo: connect enroll All to Webreg Bot
+  }
 }
