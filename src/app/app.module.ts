@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { StudyListComponent } from './components/study-list/study-list.component';
 import { AddComponent } from './components/add/add.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { EnrollPageComponent } from './pages/enroll-page/enroll-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     StudyListComponent,
-    AddComponent
+    AddComponent,
+    LoginPageComponent,
+    EnrollPageComponent
   ],
   imports: [
     BrowserModule,
